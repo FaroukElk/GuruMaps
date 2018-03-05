@@ -49,9 +49,7 @@ are provided, users are taken to Google Maps application to view the route.
   
 More info can be found here: https://developer.android.com/studio/debug/dev-options.html
   
-     
-
-   i. Open the Settings app
+   i. On your Android device open the Settings app
      
    ii. Scroll to the bottom and select About Phone (Under System on Android 8.0 and higher)
      
@@ -69,7 +67,7 @@ More info can be found here: https://developer.android.com/studio/run/index.html
   
     
 
-   i. Select Run --> Run 'app' or click Run in the toolbar
+   i. In Android Studio Select Run --> Run 'app' or click Run in the toolbar
     
    ii. Select the deployment target. Your device should be under 'Connected Devices'
 
