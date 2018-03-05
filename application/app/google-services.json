@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "645832382481",
+    "firebase_url": "https://guru-go-app.firebaseio.com",
+    "project_id": "guru-go-app",
+    "storage_bucket": "guru-go-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645832382481:android:bb835bfde67ce8c5",
+        "android_client_info": {
+          "package_name": "com.faroukelkhayat.gurugoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645832382481-qqir351irvah63gbigev1hv1pnu5oqrk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6ognZ2aJUNjFC2nhulqTV86qluhqBtS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

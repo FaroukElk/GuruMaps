@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Guru Go App</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="passwordConfirm">Confirm Password</string>
+    <string name="register">Register Account</string>
+    <string name="registerInfo">Enter login credentials to create a Guru Maps account!</string>
+    <string name="mapInfo">Enter a source and destination address to get directions for that route</string>
+    <string name="sourceAddress">Source Address</string>
+    <string name="destinationAddress">Destination Address</string>
+    <string name="route">Route</string>
+    <string name="guruMaps">Guru Maps</string>
+    <string name="signup">Sign-Up</string>
+    <string name="login">Login</string>
+</resources>

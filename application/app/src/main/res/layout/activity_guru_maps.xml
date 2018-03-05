@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mapInfo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:text="@string/mapInfo"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sourceTextInputLayout"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/mapInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sourceInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sourceAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/destinationTextInputLayout"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/sourceTextInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/destinationInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/destinationAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="45dp" />
+
+    <ImageView
+        android:id="@+id/sourceImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_my_location_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/sourceTextInputLayout"
+        app:layout_constraintBottom_toBottomOf="@id/sourceTextInputLayout"/>
+
+    <ImageView
+        android:id="@+id/destinationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_place_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/destinationTextInputLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/destinationTextInputLayout"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/signupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/route"
+        android:textColor="#FFFFFF"
+        android:onClick="getRoute"
+        android:drawableStart="@drawable/ic_directions_black_24dp"
+        android:drawableLeft="@drawable/ic_directions_black_24dp"
+        android:drawablePadding="5dp"
+        android:drawableTint="#FFFFFF"
+        app:backgroundTint="#486d92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destinationTextInputLayout" />
+</android.support.constraint.ConstraintLayout>
